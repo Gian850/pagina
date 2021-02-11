@@ -1,0 +1,28 @@
+
+	<link rel="stylesheet" type="text/css" href="cssn/style.css">
+	<script type="text/javascript" src="g.js"></script>
+	<style>
+		body{
+			background-color: blue;
+		}
+	</style>
+	<script >
+		function accionparati() {
+			alert("Ahora ya somos amigos")
+		}
+		function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('no').style.position = "absolute";
+            document.getElementById('no').style.left = newWidth + "px";
+            document.getElementById('no').style.top = newHeight + "px";
+    }
+	</script>
+<h1>Quieres ser mi amigo?</h1>
+
+<a href="#" class="button" onclick="accionparati()"id="si">SI</a>
+<a href="#" class="button" onmouseover="mueveElBoton()" id="no">NO</a>
